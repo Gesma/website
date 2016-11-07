@@ -1,0 +1,44 @@
+/*#header ul{
+  margin-left: 75px !important;
+}*/
+
+#header .nav-wrapper{
+
+}
+
+#header ul li span{
+  margin: 0;
+  display: inline;
+  text-align: center;
+  position: relative;
+  top: 12px;
+}
+
+#header ul li i{
+  height: 0px;
+  line-height: 45px;
+  margin: 0;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+}
+
+#header .side-nav i{
+  margin: 0;
+  float: none;
+}
+
+#header #menu-itens{
+  margin-left: 90px;
+}
+
+#header .fa-caret-down{
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}

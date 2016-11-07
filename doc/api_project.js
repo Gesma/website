@@ -1,0 +1,14 @@
+define({
+  "name": "projeto-mailing",
+  "version": "0.0.0",
+  "description": "",
+  "url": "http://localhost:4546",
+  "sampleUrl": "http://localhost:4546",
+  "apidoc": "0.2.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2016-10-09T18:29:21.469Z",
+    "url": "http://apidocjs.com",
+    "version": "0.16.1"
+  }
+});
