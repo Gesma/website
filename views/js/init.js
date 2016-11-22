@@ -14,9 +14,9 @@
 		//letters effect
 		lettersDelay = 50,
 		//type effect
-		typeLettersDelay = 150,
-		selectionDuration = 500,
-		typeAnimationDelay = selectionDuration + 800,
+		typeLettersDelay = 100,
+		selectionDuration = 400,
+		typeAnimationDelay = selectionDuration + 400,
 		//clip effect 
 		revealDuration = 600,
 		revealAnimationDelay = 1500;

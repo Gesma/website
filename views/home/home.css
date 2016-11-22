@@ -1,0 +1,13 @@
+.parallax{ 
+
+	background-image: url(http://2.bp.blogspot.com/-NjdSD02Mq60/VYFqAD10yYI/AAAAAAAAW9s/KhcUqUZ2W38/s1600/Sintufce%2BQuixad%25C3%25A1%2BClovis%2BRenato%2BUFC%2B%252821%2529.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+.parallax2{ 
+	background-image: url(https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/14040135_1768931573391645_5953873093451782142_n.jpg?oh=6236577d34f144001c438d506a5f6f2a&oe=58B4F366);
+}
