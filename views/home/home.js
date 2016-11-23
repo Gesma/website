@@ -11,6 +11,7 @@ window.setInterval(function(){
   if(key !== $cookies.get("lang")) {
 
     clearTimeout($scope.timeoutVar);
+    clearTimeout($scope.timeoutVar2);
 
     $("#word1").html($filter('translate')('STUDY_GROUP'));
     $("#word2").html($filter('translate')('SOFTWARE_ENGINEERING'));
@@ -101,7 +102,7 @@ var animation = function($) {
         parentSpan.removeClass('selected'); 
         $word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
       }, selectionDuration);
-      setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
+      $scope.timeoutVar2 = setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
     
     } else if($word.parents('.cd-headline').hasClass('letters')) {
       var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
