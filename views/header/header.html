@@ -1,21 +1,28 @@
 <!--Navigation-->
- <div class="navbar-fixed">
+ <div class="navbar-fixed" ng-controller="TranslateCtrl">
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
             <a href="#" id="logo-container" class="brand-logo">GESMA</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#intro">Sobre</a></li>
-                    <li><a href="#work">Projetos</a></li>
-                    <li><a href="#team">Membros</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#intro">{{'ABOUT' | translate}}</a></li>
+                    <li><a href="#work">{{'PROJECTS' | translate}}</a></li>
+                    <li><a href="#team">{{'MEMBERS' | translate}}</a></li>
+                    <li><a href="#contact">{{'CONTACT' | translate}}</a></li>
+                    <ng-repeat ng-repeat="l in languages">
+                        <li>
+                          <a ng-class="{'disabled grey-text text-darken-1': l.selected}" href="" ng-click="changeLanguage(l.cod)"><img src=""  ng-src="{{l.icon}}">
+                          </a>
+                        </li>
+                    </ng-repeat>
+                    
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#intro">Sobre</a></li>
-                    <li><a href="#work">Projetos</a></li>
-                    <li><a href="#team">Membros</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                    <li><a href="#intro">{{'ABOUT' | translate}}</a></li>
+                    <li><a href="#work">{{'CONTACT' | translate}}</a></li>
+                    <li><a href="#team">{{'MEMBERS' | translate}}</a></li>
+                    <li><a href="#contact">{{'CONTACT' | translate}}</a></li>
+                    <li><a href="#"><img src="/img/br-flag.png"></a></li>
                 </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
